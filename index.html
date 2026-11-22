@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Story Feed / កម្រងសាច់រឿង</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-feather-pointed spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">កម្រងសាច់រឿង / Story Feed</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">✍️ UNIVERSE HUOKAING THARA • NARRATIVE & STORY ARCHIVE</div>
+            <h2 class="km">រឿងខ្លី សាច់រឿងពិត និងកំណត់ហេតុដំណើររឿង</h2>
+            <h2 class="en">Short Stories, Real Narratives & Story Chronicles</h2>
+            <p class="km">
+                អាន និងស្វែងយល់ពីសាច់រឿងជាច្រើនប្រភេទក្រោម <strong>UNIVERSE HUOKAING THARA Group</strong> ដែលចងក្រង និងរួមចំណែកដោយក្រុមការងារ លោក <strong>ជອນ រតនៈ</strong> និងអភិវឌ្ឍប្រព័ន្ធដោយក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Read original short stories, real-life chronicles, and narrative notes under <strong>UNIVERSE HUOKAING THARA Group</strong>, shaped with contributor <strong>Mr. Chorn Rothanak</strong> and engineered by our elite programmers & developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="storySearch" placeholder="ស្វែងរកសាច់រឿង... / Search stories, themes, authors, tags...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="short">Short Story / រឿងខ្លី</button>
+                    <button class="pill-btn" data-filter="real">Real Chronicle / បទពិសោធន៍</button>
+                    <button class="pill-btn" data-filter="mystery">Mystery / អាថ៌កំបាំង</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Grid -->
+        <section class="stories-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-book-open"></i>
+                <span class="km">បញ្ជីសាច់រឿង (Featured Stories)</span>
+                <span class="en">Featured Stories</span>
+            </h3>
+
+            <div class="stories-grid" id="storiesGrid">
+
+                <!-- Story 1 -->
+                <article class="story-card featured" data-cat="short">
+                    <div class="card-top">
+                        <span class="story-tag">STORY 01 • SHORT STORY</span>
+                        <span class="read-pill"><i class="fa-regular fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h4 class="km">ពន្លឺនៅចុងផ្លូវងងឹត</h4>
+                    <h4 class="en">Light Beyond the Quiet Road</h4>
+                    <p class="km">រឿងខ្លីអំពីការជម្នះឧបសគ្គ ការសម្រេចចិត្តដ៏សំខាន់ និងក្តីសង្ឃឹមដែលនាំទៅរកភាពជោគជ័យ។</p>
+                    <p class="en">A reflective short story about overcoming obstacles, bold decisions, and steady progress toward a goal.</p>
+                    <div class="card-footer">
+                        <span class="author-txt">UNIVERSE HUOKAING THARA</span>
+                        <button class="open-story-btn"
+                            data-title="ពន្លឺនៅចុងផ្លូវងងឹត / Light Beyond the Quiet Road"
+                            data-meta="Short Story • 6 min read • UNIVERSE HUOKAING THARA"
+                            data-excerpt="Every journey begins with a single deliberate step into the unknown. Even when the path ahead looks dim, clarity arrives when focus stays sharp and purpose remains clear.">
+                            <span class="km">អានសាច់រឿង</span> / <span class="en">Read Story</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Story 2 -->
+                <article class="story-card" data-cat="mystery">
+                    <div class="card-top">
+                        <span class="story-tag">STORY 02 • MYSTERY</span>
+                        <span class="read-pill"><i class="fa-regular fa-clock"></i> 9 min read</span>
+                    </div>
+                    <h4 class="km">សំបុត្រចាស់ក្នុងថតតុឈើ</h4>
+                    <h4 class="en">The Letter Inside the Wooden Drawer</h4>
+                    <p class="km">សាច់រឿងអាថ៌កំបាំងដែលចាប់ផ្តើមពីសំបុត្រចាស់មួយច្បាប់ និងអនុស្សាវរីយ៍ដែលមិនធ្លាប់លាតត្រដាង។</p>
+                    <p class="en">A mystery narrative sparked by an old letter tucked away in a wooden drawer, uncovering hidden memories.</p>
+                    <div class="card-footer">
+                        <span class="author-txt">Mr. Chorn Rothanak & Editorial</span>
+                        <button class="open-story-btn"
+                            data-title="សំបុត្រចាស់ក្នុងថតតុឈើ / The Letter Inside the Wooden Drawer"
+                            data-meta="Mystery Narrative • 9 min read • Mr. Chorn Rothanak"
+                            data-excerpt="The envelope carried no return address—only a date decades old and a warning written in faded ink that changed how the room felt after sundown.">
+                            <span class="km">អានសាច់រឿង</span> / <span class="en">Read Story</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Story 3 -->
+                <article class="story-card" data-cat="real">
+                    <div class="card-top">
+                        <span class="story-tag">STORY 03 • REAL CHRONICLE</span>
+                        <span class="read-pill"><i class="fa-regular fa-clock"></i> 7 min read</span>
+                    </div>
+                    <h4 class="km">មេរៀនពីដំណើរការងារ និងមិត្តភាព</h4>
+                    <h4 class="en">Lessons Along the Build</h4>
+                    <p class="km">កំណត់ហេតុរឿងពិតអំពីការធ្វើការងារជាក្រុម ការជឿទុកចិត្ត និងការកសាងស្នាដៃរួមគ្នា។</p>
+                    <p class="en">A real-life chronicle on teamwork, trust, and building creative and technical milestones together.</p>
+                    <div class="card-footer">
+                        <span class="author-txt">Group Chronicles</span>
+                        <button class="open-story-btn"
+                            data-title="មេរៀនពីដំណើរការងារ និងមិត្តភាព / Lessons Along the Build"
+                            data-meta="Real Chronicle • 7 min read • UNIVERSE HUOKAING THARA"
+                            data-excerpt="Great ideas take shape when disciplined planning meets creative energy—turning late-night drafts into lasting work shared with the community.">
+                            <span class="km">អានសាច់រឿង</span> / <span class="en">Read Story</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Story Reader Modal -->
+    <div id="storyModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <span class="modal-badge">STORY EXCERPT</span>
+            <h3 id="modalStoryTitle">Story Title</h3>
+            <p id="modalStoryMeta" class="modal-meta"></p>
+            <div id="modalStoryExcerpt" class="modal-excerpt"></div>
+            <button id="closeStoryModal" class="control-btn full-width">
+                <span class="km">បិទផ្ទាំង</span> / <span class="en">Close Reader</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
